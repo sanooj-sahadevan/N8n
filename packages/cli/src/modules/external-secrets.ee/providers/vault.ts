@@ -9,7 +9,7 @@ import { ExternalSecretsConfig } from '../external-secrets.config';
 import type { SecretsProviderSettings, SecretsProviderState } from '../types';
 import { SecretsProvider } from '../types';
 
-type VaultAuthMethod = "s";
+type VaultAuthMethod = 'token' | 'usernameAndPassword' | 'appRole';
 
 interface VaultSettings {
 	url: string;
